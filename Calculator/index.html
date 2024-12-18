@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="result">
+            <h2 id="calc-result">0</h2>
+        </div>
+        <div class="button"></div>
+        <div class="numpad">
+            <button class="num" id="modulo" onclick="appendOperator('%')" style="background-color: rgb(195, 56, 255);color: rgb(255, 255, 255);">%</button>
+            <button class="num" id="sqr-root" onclick="calcRoot()" style="background-color: rgb(197, 62, 255);color: rgb(255, 255, 255);">√</button>
+            <button class="num" id="clear-all" onclick="clearDisplay()" style="background-color: rgb(57, 57, 57);color: white;">C</button>
+            <button class="num" id="delete" onclick="deleteLast()" style="background-color: rgb(32, 194, 219);color: white;">Del</button>
+            <button class="num" id="number" onclick="appendNumber('7')">7</button>
+            <button class="num" id="number" onclick="appendNumber('8')">8</button>
+            <button class="num" id="number" onclick="appendNumber('9')">9</button>
+            <button class="num" id="minus" onclick="appendOperator('-')" style="background-color: rgb(255, 31, 31);color: white;">-</button>
+            <button class="num" id="number" onclick="appendNumber('4')">4</button>
+            <button class="num" id="number" onclick="appendNumber('5')">5</button>
+            <button class="num" id="number" onclick="appendNumber('6')">6</button>
+            <button class="num" id="devide" onclick="appendOperator('/')" style="background-color: rgb(75, 141, 255);color: white;">/</button>
+            <button class="num" id="number" onclick="appendNumber('1')">1</button>
+            <button class="num" id="number" onclick="appendNumber('2')">2</button>
+            <button class="num" id="number" onclick="appendNumber('3')">3</button>
+            <button class="num" id="plus" onclick="appendOperator('+')" style="background-color: rgb(255, 225, 72);color: white;">+</button>
+            <button class="num" id="dot" onclick="appendDot('.')">.</button>
+            <button class="num" id="number" onclick="appendNumber('0')">0</button>
+            <button class="num" id="equals" onclick="calculateResult()" style="background-color: rgb(255, 143, 16);color: white;">=</button>
+            <button class="num" id="multiplication" onclick="appendOperator('*')" style="background-color: rgb(144, 255, 53);color: white;">x</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
